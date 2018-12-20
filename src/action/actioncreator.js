@@ -1,4 +1,5 @@
 import {fetch} from "whatwg-fetch";
+import { resolve } from "url";
 import fetchJsonp from "fetch-jsonp" 
 export const get_banner=()=>({
 	type:"GET_BANNER",
@@ -25,3 +26,17 @@ export const get_navlist=()=>({
 		})
 	})
 })
+
+export  const getHomePopularData = (dispatch) =>{
+    dispatch({
+        type : "HOME_POPULAR_DATA",
+        payload:new Promise(resolve=>{
+            let url = "https://mcebackup.mogucdn.com/jsonp/get/3%3Fpid=13730&13730backup";
+            fetchJsonp(url)
+            .then(res=>res.json())
+            .then((data)=>{
+                resolve(data)
+            })
+        })
+    })
+}

@@ -4,7 +4,7 @@ import "./common/css/reset.css";
 import "./common/js/flexble";
 import App from './App';
 import "./common/css/footer.css";
-
+import './common/css/iconfont/iconfont.css'
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
