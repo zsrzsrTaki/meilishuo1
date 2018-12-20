@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import "./common/css/reset.css";
+import "./common/js/flexble";
 import App from './App';
-
+import "./common/css/footer.css";
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
