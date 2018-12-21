@@ -40,3 +40,16 @@ export  const getHomePopularData = (dispatch) =>{
         })
     })
 }
+
+export const get_ClassifyData = ()=>({
+	type:"GET_CLASSIFYDATA",
+	payload:new Promise(resolve=>{
+		fetchJsonp("http://simba-api.meilishuo.com/venus/mce/v1/urlChange/pc?pid=20783&channel=wap&page=1&pageSize=30&_=1545373336997")
+		.then(res=>res.json())
+		.then((data)=>{
+			console.log(data)
+			resolve(data)
+		})
+	})
+	
+})
