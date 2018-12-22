@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import  React,{Component} from "react"
 import 	Search from "../home/children/search"
 import "./style/index.css"
@@ -34,3 +35,16 @@ const mapDispatchToProps=(dispatch)=>({
 
 export default connect(mapStateToProps,mapDispatchToProps)(Classify)
 
+=======
+import React,{Component}  from   'react'
+
+export default class  Classify extends Component{
+    render(){
+        return(
+            <div>
+                classify
+            </div>
+        )
+    }
+}
+>>>>>>> wxh

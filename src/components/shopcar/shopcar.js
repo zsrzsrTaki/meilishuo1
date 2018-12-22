@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React,{Component} from "react"
 import {Link} from "react-router-dom"
 import "./style/index.css"
@@ -23,3 +24,16 @@ class Shopcar extends Component{
 
 
 export default Shopcar
+=======
+import React,{Component}  from   'react'
+
+export default class  Shopcar extends Component{
+    render(){
+        return(
+            <div>
+                shopcar
+            </div>
+        )
+    }
+}
+>>>>>>> wxh

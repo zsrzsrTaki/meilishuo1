@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React,{Component} from "react"
 import {HashRouter as Router, Route,Link,Switch} from "react-router-dom"
 import "./style/index.css"
@@ -43,3 +44,16 @@ class Login extends Component{
 }
 
 export default Login
+=======
+import React,{Component}  from   'react'
+
+export default class  Login extends Component{
+    render(){
+        return(
+            <div>
+                login
+            </div>
+        )
+    }
+}
+>>>>>>> wxh

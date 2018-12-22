@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 
 import { BrowserRouter, HashRouter as Router, Route, Link, NavLink, Switch, Redirect } from 'react-router-dom'
 
@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <Provider store={Store}>
         <Router>
-          <div  className="main">
+          <div>
             <Switch>
               <Route path="/home" component={Home}></Route>
               <Route path="/classify" component={Classify}></Route>
