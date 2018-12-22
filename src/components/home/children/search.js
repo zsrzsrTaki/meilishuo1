@@ -1,14 +1,19 @@
-import React,{Component} from 'react'
+import React, { Component } from 'react'
 
-class Search extends Component{
-	render(){
-		return(
-				<div className="searchPart">
-					<i className="iconfont">xxx</i>
-					<div id="search"><i className="iconfont">x</i><input type="text" placeholder="搜索"/></div>
-					<i className="iconfont">yyy</i>
+class Search extends Component {
+	render() {
+		return (
+			<div className="searchPart">
+				<div className="logo">
+
 				</div>
-			)
+				<div id="search">
+					<i className="iconfont  one">&#xe61b;</i>
+					<input type="text" placeholder="搜索" />
+				</div>
+				<i className="iconfont  two">&#xe607;</i>
+			</div>
+		)
 	}
 }
 
