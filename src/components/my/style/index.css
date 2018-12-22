@@ -1,0 +1,120 @@
+.loginTitle{
+	width:100%;
+	height:1.11rem;
+	line-height: 1.11rem;
+	background: #fafafa;
+	display: flex;
+	justify-content: space-between;
+	font-size: .37rem;
+	color:#666;
+	border-bottom: 1px solid #c9c7c8;
+}
+.loginTitle>a>i{
+	width:1.31rem;
+	padding-left:.410156rem;
+	font-size: .30rem;	
+}
+.loginTitle>p{
+	text-align: center;
+}
+.loginTitle>span{
+	width:1.15rem;
+	padding-right:.1rem;
+	font-size:.25rem
+	
+}
+.login{
+	background:#fff;
+	height:12.3rem
+}
+.loginOut{
+	width:100%;
+	height:9.78rem;
+	background:#FFFFFF;
+	padding:1rem .3rem 0rem .3rem;
+	text-align: center;
+}
+.loginInput{
+	width:100%;
+	height:1.31rem;
+	
+}
+.loginInput>p{
+	font-size: 0.28rem;
+    text-align: center;
+    line-height: 0.28rem;
+    color: #666;
+    margin-bottom: 0.4rem;
+}
+.loginInput>input{
+	margin-bottom: 0.49rem;
+    height: 0.63rem;
+    line-height: 0.63rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-bottom: 0.15rem;
+    font-size: 0.48rem;
+    border: none;
+    border-bottom: 1px solid #ededed;
+    color: #ededed;
+    background: #fff;
+}
+
+.passwordInput{
+	width:100%;
+	height:1.31rem;
+	margin-bottom:.48rem;
+}
+.passwordInput>p{
+	font-size: 0.28rem;
+    text-align: center;
+    line-height: 0.28rem;
+    color: #666;
+    margin-bottom: 0.4rem;
+}
+.passwordInput>input{
+	margin-bottom: 0.49rem;
+    height: 0.63rem;
+    line-height: 0.63rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-bottom: 0.15rem;
+    font-size: 0.48rem;
+    border: none;
+    border-bottom: 1px solid #ededed;
+    color: #333;
+    background: #fff;
+}
+.loginButton{
+
+	width: 100%;
+    font-size: 0.36rem;
+    height: 1rem;
+    line-height: 1rem;
+    display: inline-block;
+    background: rgb(255, 70, 80);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+#loginButton{
+	color:#fff
+}
+.loginBottom{
+	width:100%;
+	height:.42rem;
+	height:.42rem;
+	display: flex;
+	justify-content: space-between;
+	margin-top:.21rem;
+	font-size:.28rem;
+}
+#registerCount{
+	color:#FF6666;
+}

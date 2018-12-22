@@ -10,6 +10,8 @@ import Shopcar from './components/shopcar/shopcar'
 
 import My from './components/my/login'
 
+import  Register from "./components/my/register"
+
 import Store from './store'
 
 import { Provider } from 'react-redux'
@@ -25,6 +27,7 @@ class App extends Component {
               <Route path="/classify" component={Classify}></Route>
               <Route path="/shopcar" component={Shopcar}></Route>
               <Route path="/my" component={My}></Route>
+              <Route path="/register" component={Register}></Route>
               <Redirect path="/" to="/home" />
             </Switch>
             <div id="footer">
