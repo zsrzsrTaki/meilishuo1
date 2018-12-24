@@ -12,7 +12,7 @@
 .loginTitle>a>i{
 	width:1.31rem;
 	padding-left:.410156rem;
-	font-size: .30rem;	
+	font-size: .5rem;	
 }
 .loginTitle>p{
 	text-align: center;
@@ -104,6 +104,9 @@
     white-space: nowrap;
 }
 #loginButton{
+	border:none;
+	font-size:.36rem;
+	background: rgb(255, 70, 80);
 	color:#fff
 }
 .loginBottom{

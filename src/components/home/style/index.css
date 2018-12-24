@@ -3,12 +3,12 @@
 	height:.9rem;
 	background: #fff;
 	display: flex;
-<<<<<<< HEAD
+
 	/*position: fixed;
 	top:0;
 	left:0;*/
 
-=======
+
 	justify-content:space-between;
 	align-content: center
 }
@@ -18,7 +18,7 @@
 	margin: 0 15px; 
 	background: url("../../../common/img/logo.jpg")  no-repeat  center  center;
 	background-size: contain;
->>>>>>> wxh
+
 }
 #search{
 	width:4.9rem;

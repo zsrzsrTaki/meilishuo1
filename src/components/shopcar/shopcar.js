@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React,{Component} from "react"
 import {Link} from "react-router-dom"
 import "./style/index.css"
@@ -7,7 +6,7 @@ class Shopcar extends Component{
 		return(
 			<div className="shopcar">
 				<div className="shopcarTitle">
-				<Link to="/home"><i className="iconfont">xxx</i></Link>
+				<Link to="/home"><i className="iconfont">&lt;</i></Link>
 					<p>购物车</p>
 					<span><Link to="/home">首页</Link></span>
 				</div>
@@ -24,16 +23,3 @@ class Shopcar extends Component{
 
 
 export default Shopcar
-=======
-import React,{Component}  from   'react'
-
-export default class  Shopcar extends Component{
-    render(){
-        return(
-            <div>
-                shopcar
-            </div>
-        )
-    }
-}
->>>>>>> wxh
