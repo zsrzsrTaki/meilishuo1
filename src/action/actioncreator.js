@@ -1,5 +1,7 @@
 import fetchJsonp from "fetch-jsonp"
 
+import {fetch} from 'whatwg-fetch'
+
 export const get_banner = () => ({
 	type: "GET_BANNER",
 	payload: new Promise(resolve => {
@@ -99,6 +101,49 @@ export const get_Goods_action3 = (dispatch) => {
 				.then((data) => {
 					resolve(data)
 				})
+		})
+	})
+}
+export  const getHomePopularData = (dispatch) =>{
+    dispatch({
+        type : "HOME_POPULAR_DATA",
+        payload:new Promise(resolve=>{
+            let url = "https://mcebackup.mogucdn.com/jsonp/get/3%3Fpid=13730&13730backup";
+            fetchJsonp(url)
+            .then(res=>res.json())
+            .then((data)=>{
+                resolve(data)
+            })
+        })
+    })
+}
+
+export const get_ClassifyData = ()=>({
+	type:"GET_CLASSIFYDATA",
+	payload:new Promise(resolve=>{
+		fetchJsonp("http://simba-api.meilishuo.com/venus/mce/v1/urlChange/pc?pid=20783&channel=wap&page=1&pageSize=30&_=1545373336997")
+		.then(res=>res.json())
+		.then((data)=>{
+			resolve(data)
+		})
+	})
+	
+})
+
+
+//详情页
+export const get_Detail_action = (dispatch,id) => {
+	dispatch({
+		type: "GET_DETAIL_DATA",
+		payload: new Promise(resolve => {
+			//http://m.meilishuo.com/detail/mls/v1/h5?iid=1m8olks&_ajax=1&cparam=
+			//http://m.meilishuo.com/detail/mls/v1/h5?iid=1m9oam0&_ajax=1&cparam=
+			let url = "/detail/mls/v1/h5?iid=" + id + "&_ajax=1&cparam=";
+			fetch(url)
+			.then(res=>res.json())
+			.then((data)=>{
+				resolve(data)
+			})
 		})
 	})
 }

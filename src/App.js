@@ -10,9 +10,13 @@ import Shopcar from './components/shopcar/shopcar'
 
 import My from './components/my/login'
 
-import Store from './store'
+import  Register from "./components/my/register"
 
-import Register from './components/my/register'
+import  LoginSuccess from './components/my/loginsucccess'
+
+import Detail from './components/home/children/detail'
+
+import Store from './store'
 
 import { Provider } from 'react-redux'
 
@@ -28,6 +32,8 @@ class App extends Component {
               <Route path="/shopcar" component={Shopcar}></Route>
               <Route path="/my" component={My}></Route>
               <Route path="/register"  component={Register}></Route>
+              <Route path="/detail/:id"  component={Detail}></Route>
+              <Route path="/loginsuccess"  component={LoginSuccess}></Route>
               <Redirect path="/" to="/home" />
             </Switch>
             <div id="footer">

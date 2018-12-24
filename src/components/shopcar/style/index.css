@@ -1,0 +1,46 @@
+.shopcarTitle{
+	width:100%;
+	height:1.11rem;
+	line-height: 1.11rem;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	font-size: .37rem;
+	color:#666
+}
+.shopcarTitle>a>i{
+	width:1.11rem;
+	padding-left:.350156rem;
+	font-size: .33rem;	
+}
+.shopcarTitle>p{
+	text-align: center;
+}
+.shopcarTitle>span{
+	width:1.0313rem;
+	padding-right:.29rem;
+	
+}
+.shopcar{
+	background:#eee;
+	height:12.3rem
+}
+.prompt{
+	width:100%;
+	height:3.0425rem;
+	padding-top:1rem;
+	text-align: center;
+	font-size: .28rem;
+	color:#888
+}
+.prompt #go{
+	display: block;
+    width: 1.52rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .18rem 0;
+    margin-top: .4rem;
+    border-radius: .03rem;
+    background-color: #f66;
+    color: #fff;
+}
