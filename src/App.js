@@ -12,13 +12,11 @@ import My from './components/my/login'
 
 import  Register from "./components/my/register"
 
-<<<<<<< HEAD
-import Loginsuccess from "./components/my/loginsucccess"
-=======
-import  LoginSuccess from './components/my/loginsucccess'
+import LoginSuccess from "./components/my/loginsucccess"
+
 
 import Detail from './components/home/children/detail'
->>>>>>> wxh
+
 
 import Store from './store'
 
@@ -35,14 +33,11 @@ class App extends Component {
               <Route path="/classify" component={Classify}></Route>
               <Route path="/shopcar" component={Shopcar}></Route>
               <Route path="/my" component={My}></Route>
-<<<<<<< HEAD
-              <Route path="/register" component={Register}></Route>
-              <Route path="/loginsucccess" component={Loginsuccess}></Route>
-=======
+
               <Route path="/register"  component={Register}></Route>
               <Route path="/detail/:id"  component={Detail}></Route>
               <Route path="/loginsuccess"  component={LoginSuccess}></Route>
->>>>>>> wxh
+
               <Redirect path="/" to="/home" />
             </Switch>
             <div id="footer">
