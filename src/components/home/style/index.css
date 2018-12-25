@@ -3,12 +3,6 @@
 	height:.9rem;
 	background: #fff;
 	display: flex;
-
-	/*position: fixed;
-	top:0;
-	left:0;*/
-
-
 	justify-content:space-between;
 	align-content: center
 }
@@ -20,6 +14,18 @@
 	background-size: contain;
 
 }
+/*=======
+	justify-content:space-between;
+	align-content: center
+}*/
+.searchPart .logo{
+	width: 0.58rem;
+	height: 0.9rem;
+	margin: 0 15px; 
+	background: url("../../../common/img/logo.jpg")  no-repeat  center  center;
+	background-size: contain;
+}
+
 #search{
 	width:4.9rem;
 	height:0.56rem;

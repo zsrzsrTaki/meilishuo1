@@ -25,6 +25,7 @@ export const get_navlist = () => ({
 })
 
 
+
 export  const getHomePopularData = (dispatch) =>{
     dispatch({
         type : "HOME_POPULAR_DATA",
@@ -51,6 +52,7 @@ export const get_ClassifyData = ()=>({
 	})
 	
 })
+
 
 export const get_Home_Popular_Data = (dispatch) => {
 	dispatch({
@@ -129,4 +131,8 @@ export const get_Goods_action3 = (dispatch) => {
 				})
 		})
 	})
+
 }
+
+
+
