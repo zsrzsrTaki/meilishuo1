@@ -2,7 +2,10 @@ const defaultState = {
     weekPopularList: [],
     advertisementList: [],
     goodsListOne: [],
-    page: 2
+    page: 2,
+    detailList : [],
+    detail : [],
+    columns : []
 }
 
 export default (state = defaultState, action) => {
@@ -32,6 +35,13 @@ export default (state = defaultState, action) => {
             moreState.goodsListOne = [...moreState.goodsListOne, ...action.payload.data.list]
             moreState.page += 1;
             return moreState
+        case 'GET_DETAIL_DATA_FULFILLED' : 
+            let detailState = JSON.parse(JSON.stringify(state));
+            detailState.detailList = action.payload.result.itemInfo.topImages;
+            detailState.detail = action.payload.result.itemInfo;
+            detailState.columns = action.payload.result.columns;
+            console.log(action.payload.result)
+            return detailState
         default:
     }
     return state;

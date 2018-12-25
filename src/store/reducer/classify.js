@@ -4,7 +4,6 @@ const defaultState={
 
 
 export default(state = defaultState,action)=>{
-	console.log(action.type)
 	switch(action.type){
 		case "GET_CLASSIFYDATA_FULFILLED" :
 		console.log(state)
